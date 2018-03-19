@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <style>
+    body{
+      margin-top: 25px;
+      background-position: center;
+      border-width: 6px;
+      border-color: #8298C2;
+      padding-top: 20px;
+      background: URL("http://cosmoknowledge.com/wp-content/uploads/2017/05/2xcluster.jpg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      padding-bottom: 30px;}
+    .menu{
+      width:30px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;}
+    #menu{
+      float:right;
+      padding-right: 20px;}
+
+    .home{
+      font-size: 35px;
+      color: white;
+      padding-right: 20px;}
+    .logo{
+      align-self: center;
+      vertical-align: middle;
+      padding-top: 6%;
+      margin-bottom: 10px;}
+
+    .user{
+      height: 30px;
+      width: 35px;
+      padding-right: 5px;}
+#usersSearch{
+  width: 50%;
+  height: 35px;
+ margin-top: 10px;
+ padding-top: 0px;
+}
+.engine{
+  opacity: 0,5;
+}
+.engine:hover{
+  opacity: 1,0;
+}
+.footer{
+  color: white !important;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic !important;
+
+}
+.userid{
+  border-radius: 100%;
+  width: 35px;
+  height: 40px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 5px;
+  background: URL(https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/48px-User_icon_2.svg.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.tbtn{
+  padding: 5px;
+  width: 19%;
+  border-radius: 50px;
+  border-color: #18A5EB;
+  background-color: white;
+  opacity: 0.6;
+  height: 30px;
+  margin-top: 15px;
+}
+.tbtn:hover{
+  opacity: 1.0;
+  background-color: silver;
+  height: 30px;
+  width: 22%;
+  border-color: inherit;
+  border-radius: 70px;
+  border-color: white;
+  border-width: 3px;
+
+}
+.sbtn{
+  width: 19%;
+  height: 30px;
+  border-radius: 50px;
+  border-color: #18A5EB;
+  opacity: 0.5;
+  background-color: white;
+
+}
+.sbtn:hover{
+  width: 22%;
+  opacity: 1.0;
+  background-color: silver;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 70px;
+
+}
+.sbtn:hover + span {
+   display: block;
+}
+.mbtn{
+  border-radius: 10%;
+  background-color: inherit;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1px 11px 2px 1px;
+    z-index: 3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: inherit;
+}
+p{
+  color: white !important;
+  font-weight: bold;
+  font-style: italic;
+}
+#logo{
+  padding-top: 10px;
+  margin-bottom: -60px;
+}
+h2{
+  font-size: 20px;
+  align: center;
+  color: white;
+  font-family: monospace;
+  margin-top: 15px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 30px;
+  padding-bottom: -10px;
+  text-decoration: underline;
+  text-decoration: line-through;
+  border-bottom: 6px double;
+}
+.sdial{
+  padding-bottom: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+#wiki{
+  background: URL("https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wikipedia_svg_logo.svg/200px-Wikipedia_svg_logo.svg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p2{
+  color: white;
+  font-size: 18px;
+  font-family: times;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: italic;
+}
+.well{
+  margin-top: 30px;
+}
+#faceb{
+  background: URL("http://www.iconninja.com/files/225/558/436/facebook-circle-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  $(document).ready(function(){
+    $("button").addClass("animated shake");
+
+    });</script>
+}
+#mail{
+  background: URL("https://cdn4.iconfinder.com/data/icons/happily-colored-snlogo/128/gmail-email-mail-logo-circle-material.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#pin{
+  background: URL("http://diylogodesigns.com/blog/wp-content/uploads/2016/04/App-Pinterest-icon-with-out-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#tweet{
+  background: URL("http://backgroundcheckall.com/wp-content/uploads/2017/12/twitter-round-logo-png-transparent-background-7.png");
+  background-size: cover;
+}
+#yahoo{
+  background: URL("http://icons.iconarchive.com/icons/martz90/circle/512/yahoo-icon.png");
+  background-size: cover;
+}
+#amazon{
+  background: URL("http://icons.iconarchive.com/icons/sicons/basic-round-social/512/amazon-icon.png");
+  background-size: cover;
+}
+#insta{
+  background: URL("https://cdn4.iconfinder.com/data/icons/seo-web-15/465/web-user-interface_46-512.png");
+  background-size: cover;
+}
+p2{
+
+}
+input{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-family: monospace;
+  border-radius: 25px;
+  font-size: 19px;
+  box-shadow: 5px 5px silver;
+
+}
+body {
+  height: 100%;
+}
+
+body {
+  animation: background 200s cubic-bezier(1,0,0,1) infinite;
+}
+
+
+@keyframes background {
+  0% { background: URL("https://png.pngtree.com/thumb_back/fw800/back_pic/02/51/88/9357843cc13eba9.jpg");
+background-size: cover;}
+10%{
+  background: URL("http://iliketowastemytime.com/sites/default/files/imagecache/blog_image/Dolomites-Italy-hd-wallpaper-by-paul-morris-iltwmt.jpg");
+  background-size: cover;
+}
+30%{
+  background: URL("http://backgroundcheckall.com/wp-content/uploads/2017/12/australia-background-5.jpg");
+  background-size: cover;
+}
+  40%{ background: URL("https://png.pngtree.com/thumb_back/fw800/back_pic/03/60/46/0157a5d8115f1aa.jpg");
+background-size: cover;}
+50%{
+  background: URL("http://4.bp.blogspot.com/-OhKY3BEF9Lw/TdOj_h1qihI/AAAAAAAAAQU/bL_NWfB1QBk/s400/ts.jpg");
+  background-size: cover;
+}
+55%{
+  background: URL("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYiC9CXkzEg624DpmbNBzpzxVxqv0zmVvqKgwBnICsR7x8HYnLA");
+  background-size: cover;
+}
+60%{
+  background: URL("http://iliketowastemytime.com/sites/default/files/imagecache/blog_image/stone_forest_peoples_republic_of_china2.jpg");
+  background-size: cover;
+}
+70%{
+  background: URL("https://images6.alphacoders.com/353/thumb-1920-353272.jpg");
+  background-size: cover;
+}
+80%{
+  background: URL("");
+  background-size:cover;http://iliketowastemytime.com/sites/default/files/imagecache/blog_image/stone_forest_peoples_republic_of_china1.jpg
+}
+90%{
+  background: URL("http://iliketowastemytime.com/sites/default/files/imagecache/blog_image/stone_forest_peoples_republic_of_china2.jpg");
+background-size: cover;}
+100%{
+  background: URL("http://iliketowastemytime.com/sites/default/files/imagecache/blog_image/nudgee-beach-australia-steve-greaves-hd-wallpaper.jpg");
+  background-size: cover;
+}
+
+}
+.btntxt{
+  color: #49514F;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: -5px;
+  padding-top: 1px;
+  font-family: arial;
+  font-weight: normal;
+
+}
+.btntxtcon{
+  margin-top: 2px;
+}
+
+      </style>
+
+      <div class="container-fluid">
+<div class="top">
+ <div id="menu" class="dropdown">
+    <span>
+      <button class="mbtn"><div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </button>
+    </span>
+
+   <div class="dropdown-content">
+     <div class="row">
+        <a href="report.html" target="blank"><div class="col-m-4">
+          <p>Report  <i class="fa fa-exclamation-circle"></i>.</p></div></a>
+        <a href="Help.html" target="blank"><div class="col-m-4"><p>Help</p></div></a>
+        <a href="About.html" target="blank"><div class="col-m-4"><p>ABOUT</p></div></a>
+
+     </div>
+   </div>
+</div>
+<div>  <a href="user%20id.html"><button class="userid"><center></center></button></a>
+ </div>
+
+<a href="Landing%20page.html">
+  <div class="home"><i class="fa fa-home" style="color:white !important"></a></i>
+  </div>
+<div class="engine">
+  <div class="logo">
+    <center>
+      <img src="https://tbncdn.freelogodesign.org/8e094f36-7e1a-49e8-8a0c-dc99c0f6cfdf.png?1521101565154" target="blank" id="logo">
+    </center>
+  </div>
+  <div class="sbar">
+    <center>
+      <form action="search">
+        <input type="text" placeholder="Keyword/URL" class="text-control" class="sbar" id="usersSearch" required>
+      </form>
+    </center>
+    </div>
+  </div>
+<div class="btns">
+  <div class="row">
+    <center>
+     <div class="col-m-3">
+      <a href="https://www.wikihow.com/Main-Page"><button class="sbtn"><center><strong>(DIY)!<strong></center></button></a>
+      <a href="http://iliketowastemytime.com"><button class="tbtn"> <center><strong>Wallpaper</strong></center></button></a>
+    </div>
+   </center>
+  </div>
+  <div class="btntxtcont">
+<p><center class="btntxt">
+  You can rely on SearhIt to SearchIt for you!!! <i class="fa fa-smile-o"></i>.
+</center></p>
+  </div>
+
+<div class="well">
+  <center>
+    <h2><center>Speed Dial</center></h2>
+    <p2> @ SearchIt we care about you and Saving your Time, thus we have created a speed dials for you<i class="fa fa-smile"></i>.</p2>
+      <div class="col-m-4">
+        <a href="https://www.wikipedia.org" target="_blank"><button class="sdial" id="wiki"><center></center>
+        </button></a>
+        <a href="https://www.facebook.com" target="_blank"><button class="sdial" id="faceb"><center></center>
+        </button></a>
+        <a href="https://accounts.google.com/Login" target="_blank">
+        <button class="sdial" id="mail"><center></center>
+        </button></a>
+        <a href="https://za.pinterest.com/login/" target="_blank"><button class="sdial" id="pin"><center></center>
+        </button></a>
+        <a href="https://yahoo.com/login/" target="_blank"><button class="sdial" id="yahoo"><center></center></button></a>
+        <a href="https://twitter.com/login/" target="_blank"><button class="sdial" id="tweet"><center></center></button></a>
+        <a href="https://amazon.com/login/" target="_blank"><button class="sdial" id="amazon"><center></center></button></a>
+        <a href="https://instagram.com/" target="_blank"><button class="sdial" id="insta"><center></center></button></a>
+      </div>
+    </center>
+</div>
+
+
+
+<footer>
+  <p class="footer"><center style="color: white"> Coded and Published by Johan Khanye. Made with <i class="fa fa-coffee"></i>, <i class="fa fa-heart"></i> and <i class="fa fa-music"></i>.</center></p>
+</footer>
+
+</div>
+<script>
+$(document).ready(function(){
+  $("button").addClass("animated shake");
+
+  });
+</script>
+</body>
+</html>
